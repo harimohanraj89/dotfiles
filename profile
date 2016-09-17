@@ -1,12 +1,18 @@
-if [ -f ~/.bash/global/colors.sh ]; then source ~/.bash/global/colors.sh; fi
-if [ -f ~/.bash/global/prompt.sh ]; then source ~/.bash/global/prompt.sh; fi
-if [ -f ~/.bash/global/shortcuts.sh ]; then source ~/.bash/global/shortcuts.sh; fi
-if [ -f ~/.bash/global/paths.sh ]; then source ~/.bash/global/paths.sh; fi
-if [ -f ~/.bash/local/shortcuts.sh ]; then source ~/.bash/local/shortcuts.sh; fi
-if [ -f ~/.bash/private/keys.sh ]; then source ~/.bash/private/keys.sh; fi
-if [ -f ~/.git-completion.bash ]; then source ~/.git-completion.bash; fi
+function require {
+  if [ -f $1 ]; then source $1; fi
+}
+
+require ~/.dotfiles/global/colors.sh
+require ~/.dotfiles/global/prompt.sh
+require ~/.dotfiles/global/shortcuts.sh
+require ~/.dotfiles/global/git.sh
+require ~/.dotfiles/global/heroku.sh
+require ~/.dotfiles/global/node.sh
+require ~/.dotfiles/global/ruby.sh
+require ~/.dotfiles/global/paths.sh
+require ~/.dotfiles/local/shortcuts.sh
+require ~/.dotfiles/private/keys.sh
+require ~/.git-completion.bash
 
 export EDITOR='atom -w'
 export REMOTE_IP="24.103.44.170"
-
-eval $(docker-machine env default)
