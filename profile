@@ -3,6 +3,7 @@ function require {
 }
 
 require ~/.dotfiles/global/colors.sh
+require ~/.dotfiles/global/dotjs.sh
 require ~/.dotfiles/global/prompt.sh
 require ~/.dotfiles/global/shortcuts.sh
 require ~/.dotfiles/global/git.sh
