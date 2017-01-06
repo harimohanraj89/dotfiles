@@ -1,0 +1,1 @@
+alias djs='atom ~/.js'
