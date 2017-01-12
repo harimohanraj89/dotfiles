@@ -1,5 +1,50 @@
 #!/usr/bin/env bash
 
+# Create .bash_profile
 dotfiles_dir=`pwd`
-
 sed "s:{DOTFILES_DIR}:${dotfiles_dir}:g" templates/.bash_profile > ~/.bash_profile
+
+# Install Homebrew and Cask
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew tap caskroom/cask
+brew update
+
+# Install rbenv
+brew install readline
+brew install rbenv
+rbenv install 2.4.0
+
+# Install postgresql
+brew install postgresql
+createdb `whoami`
+brew services start postgresql
+
+# Install nodenv
+brew install nodenv
+nodenv install 6.1.0
+
+brew install gcc
+brew install git
+brew install grep
+brew install heroku-toolbelt
+brew install htop-osx
+brew install imagemagick
+brew install jq
+
+brew install qt
+
+# Install brew cask applications
+brew cask install alfred
+brew cask install atom
+brew cask install dash
+brew cask install firefox
+brew cask install font-inconsolata
+brew cask install font-source-code-pro
+brew cask install font-source-sans-pro
+brew cask install google-chrome
+brew cask install java
+brew cask install spectacle
+brew cask install spotify
+brew cask install trailer
+brew cask install vlc
+brew cask install xquartz
