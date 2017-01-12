@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+dotfiles_dir=`pwd`
+
+sed "s:{DOTFILES_DIR}:${dotfiles_dir}:g" templates/.bash_profile > ~/.bash_profile
