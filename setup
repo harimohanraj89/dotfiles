@@ -51,3 +51,5 @@ brew cask install xquartz
 
 # Symlink dotfiles
 ls -s config/.gitignore_global ~/.gitignore_global
+
+source ~/.bash_profile
