@@ -50,6 +50,6 @@ brew cask install vlc
 brew cask install xquartz
 
 # Symlink dotfiles
-ls -s config/.gitignore_global ~/.gitignore_global
+ln -s config/.gitignore_global ~/.gitignore_global
 
 source ~/.bash_profile
