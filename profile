@@ -2,17 +2,17 @@ function require {
   if [ -f $1 ]; then source $1; fi
 }
 
-require global/colors.sh
-require global/dotjs.sh
-require global/prompt.sh
-require global/shortcuts.sh
-require global/git.sh
-require global/heroku.sh
-require global/node.sh
-require global/ruby.sh
-require global/paths.sh
-require local/shortcuts.sh
-require private/keys.sh
+require ${DOTFILES_DIR}/global/colors.sh
+require ${DOTFILES_DIR}/global/dotjs.sh
+require ${DOTFILES_DIR}/global/prompt.sh
+require ${DOTFILES_DIR}/global/shortcuts.sh
+require ${DOTFILES_DIR}/global/git.sh
+require ${DOTFILES_DIR}/global/heroku.sh
+require ${DOTFILES_DIR}/global/node.sh
+require ${DOTFILES_DIR}/global/ruby.sh
+require ${DOTFILES_DIR}/global/paths.sh
+require ${DOTFILES_DIR}/local/shortcuts.sh
+require ${DOTFILES_DIR}/private/keys.sh
 require ~/.git-completion.bash
 
 export EDITOR='atom -w'

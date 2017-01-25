@@ -45,6 +45,7 @@ brew cask install font-inconsolata
 brew cask install font-source-code-pro
 brew cask install font-source-sans-pro
 brew cask install google-chrome
+brew cask install keepingyouawake
 brew cask install java
 brew cask install spectacle
 brew cask install spotify
@@ -52,7 +53,17 @@ brew cask install trailer
 brew cask install vlc
 brew cask install xquartz
 
+# Install dotjs
+mkdir -p ~/code/os
+pushd ~/code/os
+git clone http://github.com/defunkt/dotjs
+pushd dotjs
+rake install
+popd
+popd
+
 # Symlink dotfiles
 ln -s config/.gitignore_global ~/.gitignore_global
+ln -s config/dotjs ~/.js
 
 source ~/.bash_profile
