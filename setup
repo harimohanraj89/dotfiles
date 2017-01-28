@@ -27,8 +27,11 @@ brew services start redis
 brew install nodenv
 nodenv install 6.1.0
 
-brew install gcc
+# Install git
 brew install git
+curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+
+brew install gcc
 brew install grep
 brew install heroku-toolbelt
 brew install htop-osx
@@ -64,6 +67,7 @@ popd
 
 # Symlink dotfiles
 ln -s config/.gitignore_global ~/.gitignore_global
-ln -s config/dotjs ~/.js
+ln -s config/.js ~/.js
+ln -s config/.gemrc ~/.gemrc
 
 source ~/.bash_profile
