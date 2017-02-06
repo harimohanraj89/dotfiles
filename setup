@@ -30,6 +30,7 @@ nodenv install 6.1.0
 # Install git
 brew install git
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+git config --global core.editor nano
 
 brew install gcc
 brew install grep
