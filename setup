@@ -70,5 +70,6 @@ popd
 ln -s config/.gitignore_global ~/.gitignore_global
 ln -s config/.js ~/.js
 ln -s config/.gemrc ~/.gemrc
+ln -s config/.rspec ~/.rspec
 
 source ~/.bash_profile
