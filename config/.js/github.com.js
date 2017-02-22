@@ -28,6 +28,13 @@ $(function() {
     .header .header-search-input:focus {                          \
       border-color: #bbb;                                         \
     }                                                             \
+    span.mail-status.unread {                                     \
+      top: 1px;                                                   \
+      right: 6px;                                                 \
+      width: 10px;                                                \
+      height: 10px;                                               \
+      border: none;                                               \
+    }                                                             \
   ';
 
   var style = $('<style></style>').html(css);
