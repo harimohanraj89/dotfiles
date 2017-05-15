@@ -12,6 +12,7 @@ require ${DOTFILES_DIR}/global/node.sh
 require ${DOTFILES_DIR}/global/ruby.sh
 require ${DOTFILES_DIR}/global/paths.sh
 require ${DOTFILES_DIR}/local/shortcuts.sh
+require ${DOTFILES_DIR}/local/env.sh
 require ${DOTFILES_DIR}/private/keys.sh
 require ~/.git-completion.bash
 
