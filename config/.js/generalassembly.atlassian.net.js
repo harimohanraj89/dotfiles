@@ -10,6 +10,8 @@ $(function() {
       .css('color', 'white')
       .css('font-weight', '800')
 
+    $('#ghx-detail-view').css('width', '800px');
+
     $('.ghx-issue').css('border-radius', '10px')
       .css('border-radius', '10px')
       .css('margin-top', '10px')
