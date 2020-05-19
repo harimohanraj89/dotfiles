@@ -38,7 +38,6 @@ brew install heroku-toolbelt
 brew install htop-osx
 brew install imagemagick
 brew install jq
-brew install qt
 
 # Install brew cask applications
 brew cask install alfred
