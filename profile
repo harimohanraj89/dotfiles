@@ -11,7 +11,6 @@ source ${DOTFILES_DIR}/global/heroku.sh
 source ${DOTFILES_DIR}/global/java.sh
 source ${DOTFILES_DIR}/global/node.sh
 source ${DOTFILES_DIR}/global/ruby.sh
-source ${DOTFILES_DIR}/global/paths.sh
 source ${DOTFILES_DIR}/global/postgresql.sh
 source ${DOTFILES_DIR}/global/shortcuts.sh
 source ${DOTFILES_DIR}/local/shortcuts.sh
